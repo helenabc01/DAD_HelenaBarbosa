@@ -7,6 +7,7 @@
     <title>Germinagram</title>
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
+    
   </head>
   <body>
     <header>
@@ -27,7 +28,7 @@
                 <p class="nome">Joana da Silva Peixoto</p>
                 <p class="hora">00 horas atrás</p>
               </div>
-            </div>
+            </div> 
             <p class="comentario">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
               veritatis ratione sit eveniet magni, velit omnis quo quis
@@ -37,6 +38,7 @@
           </div>
           <img class="post-imagem" src="pordosol.jpg" alt="" />
           <div class="post-interacoes">
+
             <div class="container-like">
               <img class="like-btn" src="like.svg" alt="like" />
               <p class="descricao-like">Curtir</p>
@@ -50,22 +52,122 @@
       </section>
     </main>
     <aside class="post-modal">
-      <form class="form-post" action="#">
+      <form class="form-post" action="#"> 
         <textarea
           name="comentario"
           class="comentario-form"
           placeholder="Digite um comentário de até 200 palavras"
+          maxlength="200"
         ></textarea>
         <div class="container-imagem">
+
+          <!-- <label class="picture" for="campo-foto"> -->
           <input
             accept="image/*"
             type="file"
             name="campo-foto"
             id="campo-foto"
           />
+          <!-- <span class="campo-foto"></span>
+        </label> -->
+
         </div>
+        <input  class="apagar" type="reset" value="Apagar">
         <input class="postar" type="submit" value="Postar" />
       </form>
     </aside>
+
+
+    <!-- ////////////////// -->
+    <aside class="logIn">
+
+      <form class="nomeUsu" action="#"> 
+        <h2>Germinagram</h2>
+
+        <textarea
+          name="name"
+          class="userName"
+          placeholder="nome de usuário"
+        ></textarea>
+        
+        <input class="senha" type="password" placeholder="Senha">
+
+        <input class="Entrar" type="button" value="Entrar" />
+        <div class="ou">
+        <hr>
+        <p>ou</p>
+        <hr>
+      </div>
+      <p style="color: blue;">Entrar com Germinabook</p>
+      <a class="cadastrar" style="cursor:pointer">não tem conta? Cadastre-se</a>
+      </form>
+    </aside> 
+
+
+    <aside class="SignUp">
+
+      <form class="nomeUsu" action="#"> 
+        <h2>Germinagram</h2>
+
+        <textarea
+          name="cadastrp"
+          class="email"
+          placeholder="número de celular ou email"
+        ></textarea>
+
+        <textarea
+          name="cadastrp"
+          class="nomeS"
+          placeholder="nome completo"
+        ></textarea>
+
+        <textarea
+          name="cadastrp"
+          class="user"
+          placeholder="nome de usuario"
+        ></textarea>
+
+        <input type="password" name="senha" id="senhaSign" placeholder="Senha">
+
+        <input type="button" class="cadastrese" value="Cadastre-se">
+        
+        <div class="ou">
+        <hr>
+        <p>ou</p>
+        <hr>
+      </div>
+      <p style="color: blue;">Entrar com Germinabook</p>
+      <a class="conectar" style="cursor:pointer">Já tem conta? Conecte-se</a>
+      </form>
+    </aside> 
+
+    <aside class="coment">
+      <form class="" action="#"> 
+        <h2>Germinagram</h2>
+
+        <textarea
+          name="cadastrp"
+          class="email"
+          placeholder="número de celular ou email"
+        ></textarea>
+
+        <textarea
+          name="cadastrp"
+          class="nomeS"
+          placeholder="nome completo"
+        ></textarea>
+
+        <input type="button" class="cadastrese" value="Cadastre-se">
+        
+        <div class="ou">
+        <hr>
+        <p>ou</p>
+        <hr>
+      </div>
+      <p style="color: blue;">Entrar com Germinabook</p>
+      <a class="conectar" style="cursor:pointer">Já tem conta? Conecte-se</a>
+      </form>
+    </aside>
+
   </body>
 </html>

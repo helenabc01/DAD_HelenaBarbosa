@@ -10,6 +10,9 @@
 p {
   font-size: 1.6rem;
 }
+button{
+  border: none;
+}
 
 html {
   font-size: 62.5%;
@@ -210,10 +213,10 @@ form {
   box-shadow: 0px 0px 10px rgb(51, 51, 182);
 }
 
-.comentario-form {
+.comentario-form, .senha {
   width: 100%;
   border: 1px solid rgb(51, 51, 182);
-  resize: none;
+    resize: none;
   padding: 1rem 2rem;
 }
 
@@ -243,7 +246,46 @@ form {
   cursor: pointer;
 }
 
-.postar:hover {
+.postar:hover { 
   background-color: rgb(91, 91, 183);
   transition: 300ms ease;
 }
+
+
+
+ 
+/*////////////////////////////////////////*/
+
+ .logIn, .SignUp{
+  position: fixed;
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 100px 0;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
+.Entrar, .cadastrese, .coment {
+  text-align: center;
+  padding: 1rem 2rem;
+  border: none;
+  width: fit-content;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  background-color: rgb(51, 51, 182);
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+.ou{
+  display: ruby;
+}
+hr{
+  width: 106px;
+  background-color: gray;
+} 
